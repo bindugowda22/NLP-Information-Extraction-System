@@ -1,0 +1,628 @@
+/* =========================================================
+   INFORMATION EXTRACTION SYSTEM
+   COMPLETE STYLE.CSS
+   ========================================================= */
+
+
+/* ================================
+   MAIN PAGE
+   ================================ */
+
+.stApp {
+    background: linear-gradient(135deg, #fdf4ff, #eff6ff, #ecfeff);
+    font-family: "Segoe UI", sans-serif;
+    color: #1e293b !important;
+}
+
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+
+/* ================================
+   GLOBAL TEXT FIX
+   ================================ */
+
+/* Normal text */
+.stApp p,
+.stApp span,
+.stApp label,
+.stApp div,
+.stApp li,
+.stApp td,
+.stApp th {
+    color: #1e293b !important;
+}
+
+/* Markdown text */
+[data-testid="stMarkdownContainer"],
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] span,
+[data-testid="stMarkdownContainer"] li {
+    color: #1e293b !important;
+}
+
+/* Headings */
+h1 {
+    color: #312e81 !important;
+}
+
+h2 {
+    color: #3730a3 !important;
+}
+
+h3 {
+    color: #4338ca !important;
+}
+
+h4 {
+    color: #4338ca !important;
+}
+
+
+/* ================================
+   SIDEBAR
+   ================================ */
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #eef2ff 0%,
+        #f0f9ff 50%,
+        #fdf4ff 100%
+    );
+
+    border-right: 1px solid #dbeafe;
+}
+
+/* Sidebar headings */
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] h4 {
+    color: #312e81 !important;
+}
+
+/* Sidebar normal text */
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] div {
+    color: #312e81 !important;
+}
+
+
+/* ================================
+   SIDEBAR TITLE
+   ================================ */
+
+.sidebar-title {
+    text-align: center;
+    padding: 8px;
+}
+
+.sidebar-title .robot {
+    font-size: 48px;
+}
+
+.sidebar-title h2 {
+    margin: 5px 0;
+    color: #4338ca !important;
+    font-size: 23px;
+}
+
+.sidebar-title p {
+    color: #64748b !important;
+    font-size: 12px;
+}
+
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+[data-testid="stSidebar"] label {
+    color: #3730a3 !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stSidebar"] [role="radiogroup"] {
+    gap: 6px;
+}
+
+/* Radio button text */
+[data-testid="stSidebar"] [role="radiogroup"] label {
+    color: #312e81 !important;
+}
+
+/* Radio button text inside label */
+[data-testid="stSidebar"] [role="radiogroup"] label p,
+[data-testid="stSidebar"] [role="radiogroup"] label span {
+    color: #312e81 !important;
+}
+
+
+/* ================================
+   CUSTOM INPUT
+   ================================ */
+
+[data-testid="stSidebar"] textarea {
+    border-radius: 14px !important;
+    border: 2px solid #c4b5fd !important;
+    background: #ffffff !important;
+    color: #1e293b !important;
+    caret-color: #312e81 !important;
+}
+
+[data-testid="stSidebar"] textarea:focus {
+    border-color: #818cf8 !important;
+    color: #1e293b !important;
+}
+
+[data-testid="stSidebar"] textarea::placeholder {
+    color: #64748b !important;
+    opacity: 1 !important;
+}
+
+
+/* ================================
+   MAIN TITLE
+   ================================ */
+
+.main-banner {
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #4f46e5,
+        #2563eb,
+        #06b6d4
+    );
+
+    border-radius: 22px;
+    padding: 35px 25px;
+    text-align: center;
+    color: white !important;
+
+    box-shadow:
+        0 12px 30px rgba(79, 70, 229, 0.25);
+
+    margin-bottom: 30px;
+}
+
+.main-banner h1 {
+    color: white !important;
+    font-size: 40px;
+    font-weight: 750;
+    margin: 0;
+}
+
+.main-banner p {
+    color: white !important;
+    font-size: 17px;
+    margin-top: 12px;
+}
+
+
+/* ================================
+   INLINE MAIN BANNER FIX
+   ================================ */
+
+/* Your app.py uses an inline banner,
+   so keep the banner text white. */
+
+.stApp div[style*="background:linear-gradient"] h1,
+.stApp div[style*="background:linear-gradient"] h2,
+.stApp div[style*="background:linear-gradient"] h3,
+.stApp div[style*="background:linear-gradient"] h4,
+.stApp div[style*="background:linear-gradient"] p,
+.stApp div[style*="background:linear-gradient"] span {
+    color: white !important;
+}
+
+
+/* ================================
+   WELCOME
+   ================================ */
+
+.welcome-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #312e81 !important;
+    margin-top: 10px;
+}
+
+.welcome-text {
+    color: #475569 !important;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+
+/* ================================
+   FEATURE CARDS
+   ================================ */
+
+.feature-card {
+    background: rgba(255,255,255,0.92);
+    border-radius: 18px;
+
+    padding: 22px;
+
+    min-height: 145px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 5px 18px rgba(15,23,42,0.07);
+
+    transition: 0.25s ease;
+
+    margin-bottom: 18px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 28px rgba(15,23,42,0.13);
+}
+
+.feature-icon {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.feature-card h3 {
+    font-size: 19px;
+    margin: 4px 0 8px;
+}
+
+.feature-card p {
+    color: #64748b !important;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   CARD COLORS
+   ================================ */
+
+.card-blue {
+    border-top: 5px solid #3b82f6;
+}
+
+.card-blue h3 {
+    color: #2563eb !important;
+}
+
+.card-green {
+    border-top: 5px solid #10b981;
+}
+
+.card-green h3 {
+    color: #059669 !important;
+}
+
+.card-purple {
+    border-top: 5px solid #8b5cf6;
+}
+
+.card-purple h3 {
+    color: #7c3aed !important;
+}
+
+.card-red {
+    border-top: 5px solid #f97316;
+}
+
+.card-red h3 {
+    color: #ea580c !important;
+}
+
+.card-yellow {
+    border-top: 5px solid #f59e0b;
+}
+
+.card-yellow h3 {
+    color: #d97706 !important;
+}
+
+.card-cyan {
+    border-top: 5px solid #06b6d4;
+}
+
+.card-cyan h3 {
+    color: #0891b2 !important;
+}
+
+
+/* ================================
+   STREAMLIT INFO BOX
+   ================================ */
+
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+    color: #1e293b !important;
+    background-color: #dbeafe !important;
+}
+
+[data-testid="stAlert"] p,
+[data-testid="stAlert"] span,
+[data-testid="stAlert"] div {
+    color: #1e293b !important;
+}
+
+
+/* ================================
+   INFO BOX
+   ================================ */
+
+.info-box {
+    background: linear-gradient(
+        90deg,
+        #eef2ff,
+        #ecfeff
+    );
+
+    border: 1px solid #c7d2fe;
+
+    border-radius: 15px;
+
+    padding: 17px 20px;
+
+    color: #3730a3 !important;
+
+    margin-top: 10px;
+
+    font-size: 15px;
+}
+
+
+/* ================================
+   HEADINGS
+   ================================ */
+
+h1 {
+    color: #312e81 !important;
+}
+
+h2 {
+    color: #3730a3 !important;
+}
+
+h3 {
+    color: #4338ca !important;
+}
+
+h4 {
+    color: #4338ca !important;
+}
+
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.stButton > button {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #6366f1,
+        #8b5cf6
+    );
+
+    color: white !important;
+
+    font-weight: 700;
+
+    padding: 10px;
+
+    transition: 0.2s;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(
+        90deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    transform: translateY(-2px);
+}
+
+.stButton > button p,
+.stButton > button span,
+.stButton > button div {
+    color: white !important;
+}
+
+
+/* ================================
+   DATAFRAME
+   ================================ */
+
+[data-testid="stDataFrame"] {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #dbeafe;
+}
+
+
+/* ================================
+   DATAFRAME TEXT
+   ================================ */
+
+[data-testid="stDataFrame"] div,
+[data-testid="stDataFrame"] span {
+    color: #1e293b !important;
+}
+
+
+/* ================================
+   METRICS
+   ================================ */
+
+[data-testid="stMetric"] {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 4px 12px rgba(15,23,42,0.06);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #475569 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #4f46e5 !important;
+}
+
+[data-testid="stMetricDelta"] {
+    color: #1e293b !important;
+}
+
+
+/* ================================
+   TEXT AREA
+   ================================ */
+
+textarea {
+    color: #1e293b !important;
+    background-color: white !important;
+}
+
+textarea::placeholder {
+    color: #64748b !important;
+}
+
+
+/* ================================
+   TEXT INPUT
+   ================================ */
+
+input {
+    color: #1e293b !important;
+    background-color: white !important;
+}
+
+input::placeholder {
+    color: #64748b !important;
+}
+
+
+/* ================================
+   SELECT BOX
+   ================================ */
+
+[data-baseweb="select"] {
+    background-color: white !important;
+}
+
+[data-baseweb="select"] div {
+    color: #1e293b !important;
+}
+
+
+/* ================================
+   SUCCESS / WARNING / ERROR
+   ================================ */
+
+[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+[data-testid="stAlert"][data-baseweb="notification"] {
+    color: #1e293b !important;
+}
+
+
+/* ================================
+   DIVIDERS
+   ================================ */
+
+hr {
+    border-color: #dbeafe;
+}
+
+
+/* ================================
+   LINKS
+   ================================ */
+
+a {
+    color: #4f46e5 !important;
+}
+
+
+/* ================================
+   CODE
+   ================================ */
+
+code {
+    color: #1e293b !important;
+}
+
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 900px) {
+
+    .main-banner h1 {
+        font-size: 30px;
+    }
+
+    .main-banner p {
+        font-size: 14px;
+    }
+
+    .feature-card {
+        min-height: auto;
+    }
+}
+
+
+/* ================================
+   FINAL VISIBILITY OVERRIDE
+   ================================ */
+
+/* Make ordinary dashboard text dark.
+   Banner and buttons are overridden above. */
+
+.stApp [data-testid="stMarkdownContainer"] p {
+    color: #1e293b !important;
+}
+
+.stApp [data-testid="stMarkdownContainer"] li {
+    color: #1e293b !important;
+}
+
+.stApp [data-testid="stMarkdownContainer"] strong {
+    color: #0f172a !important;
+}
+
+
+/* Sidebar final override */
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] span {
+    color: #312e81 !important;
+}
+
+
+/* Keep buttons white */
+
+.stButton button,
+.stButton button p,
+.stButton button span {
+    color: white !important;
+}
